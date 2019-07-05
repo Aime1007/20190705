@@ -129,22 +129,22 @@ int main() {
         cout<<"file OK"<<endl;
         average(judge,avg1);
         sort(avg1,num);
-        ljlout << std::left << setw(12) <<"排名";
+        ljlout << std::left << setw(12) <<"鎺掑悕";
         for(int i=0; i<N; i++ ){
             ljlout << std::left << setw(8) << i+1;
         }
         ljlout<<endl;
-        ljlout << std::left << setw(12) <<"学号";
+        ljlout << std::left << setw(12) <<"瀛﹀彿";
         for(int i=0; i<N; i++ ){
             ljlout << std::left << setw(8) << student[num[i]].get1();
         }
         ljlout<<endl;
-        ljlout << std::left << setw(12) <<"姓名";
+        ljlout << std::left << setw(12) <<"濮撳悕";
         for(int i=0; i<N; i++ ){
             ljlout << std::left << setw(8) << student[num[i]].get2();
         }
         ljlout<<endl;
-        ljlout << std::left << setw(12) <<"得分";
+        ljlout << std::left << setw(12) <<"寰楀垎";
         for(int i=0; i<N; i++ ){
             ljlout << std::left << setw(8) << avg1[i];
         }
