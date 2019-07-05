@@ -48,10 +48,10 @@ void average(Judge *jud,double *avg1){
         for(int j=0; j<7; j++ )
             scor[i][j] = (*(jud+j)).get2(i);
     int max,min;
-    int sign_max=0,sign_min=0;
+    int sign_max = 0,sign_min = 0;
     for(int i=0; i<N; i++ ){
-        max=scor[i][0];
-        min=scor[i][0];
+        max = scor[i][0];
+        min = scor[i][0];
         for(int j=0; j<7; j++ ){
             if( scor[i][j]>max ){
                 max = scor[i][j];
@@ -62,7 +62,8 @@ void average(Judge *jud,double *avg1){
                 sign_min = j;
             }
         }
-        scor[i][sign_max]=0; scor[i][sign_min] =0;
+        scor[i][sign_max] = 0; 
+        scor[i][sign_min] = 0;
     }
     for(int i=0; i<N; i++ ){
     	sum = 0; 
